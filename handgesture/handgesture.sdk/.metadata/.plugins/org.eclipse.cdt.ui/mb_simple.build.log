@@ -1,0 +1,32 @@
+20:03:30 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:78:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:96:10: warning: variable 'current_gesture' set but not used [-Wunused-but-set-variable]
+     char current_gesture = 0;
+          ^~~~~~~~~~~~~~~
+../src/helloworld.c:95:10: warning: unused variable 'user_byte' [-Wunused-variable]
+     char user_byte = 0;
+          ^~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: mb_simple.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: mb_simple.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4308	    320	   3108	   7736	   1e38	mb_simple.elf
+Finished building: mb_simple.elf.size
+ 
+
+20:03:32 Build Finished (took 1s.384ms)
+

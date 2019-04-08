@@ -1,0 +1,803 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Mar 27 17:24:18 2019
+# Process ID: 6044
+# Current directory: C:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.runs/handgesture_mb_myip_slave2_0_0_synth_1
+# Command line: vivado.exe -log handgesture_mb_myip_slave2_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source handgesture_mb_myip_slave2_0_0.tcl
+# Log file: C:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.runs/handgesture_mb_myip_slave2_0_0_synth_1/handgesture_mb_myip_slave2_0_0.vds
+# Journal file: C:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.runs/handgesture_mb_myip_slave2_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source handgesture_mb_myip_slave2_0_0.tcl -notrace
+Command: synth_design -top handgesture_mb_myip_slave2_0_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 26484 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 389.332 ; gain = 100.941
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'handgesture_mb_myip_slave2_0_0' [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ip/handgesture_mb_myip_slave2_0_0/synth/handgesture_mb_myip_slave2_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'myip_slave2_v1_0' [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/hdl/myip_slave2_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'myip_slave2_v1_0_S00_AXI' [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/hdl/myip_slave2_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/hdl/myip_slave2_v1_0_S00_AXI.v:235]
+INFO: [Synth 8-226] default block is never used [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/hdl/myip_slave2_v1_0_S00_AXI.v:376]
+INFO: [Synth 8-6157] synthesizing module 'gyro_interface' [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/gyro_interface.v:23]
+INFO: [Synth 8-6157] synthesizing module 'spi_master' [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/spi_master.v:23]
+	Parameter IDLE bound to: 4'b0000 
+	Parameter INIT bound to: 4'b0001 
+	Parameter RUN bound to: 4'b0010 
+	Parameter TRANSFER_ADDRESS bound to: 4'b0011 
+	Parameter TRANSFER_DATA bound to: 4'b0100 
+	Parameter TRANSFER_END bound to: 4'b0101 
+	Parameter READ_X_L bound to: 4'b0110 
+	Parameter READ_X_H bound to: 4'b0111 
+	Parameter READ_Y_L bound to: 4'b1000 
+	Parameter READ_Y_H bound to: 4'b1001 
+	Parameter READ_Z_L bound to: 4'b1010 
+	Parameter READ_Z_H bound to: 4'b1011 
+	Parameter DONE_READ bound to: 4'b1100 
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/spi_master.v:97]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/spi_master.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'spi_master' (1#1) [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/spi_master.v:23]
+INFO: [Synth 8-6157] synthesizing module 'spi_interface' [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/spi_interface.v:25]
+	Parameter SPI_CLK_COUNT_MAX bound to: 12'b111111111111 
+	Parameter RX_COUNT_MAX bound to: 4'b1000 
+	Parameter RxTxTYPE_idle bound to: 3'b000 
+	Parameter RxTxTYPE_rx_tx bound to: 3'b001 
+	Parameter RxTxTYPE_hold bound to: 3'b010 
+	Parameter RxTxTYPE_end bound to: 3'b011 
+	Parameter RxTxTYPE_buffer bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/spi_interface.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'spi_interface' (2#1) [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/spi_interface.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'gyro_interface' (3#1) [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/gyro_interface.v:23]
+INFO: [Synth 8-6157] synthesizing module 'resetter' [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/resetter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'resetter' (4#1) [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/resetter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'filter' [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/filter.v:3]
+	Parameter NUMBER_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'filter' (5#1) [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/filter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'integrator' [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/integrator.v:3]
+	Parameter NUMBER_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'integrator' (6#1) [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/integrator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cordic_counter' [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic_counter.v:3]
+	Parameter NUMBER_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cordic' [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:5]
+	Parameter width bound to: 16 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element xyz[14].z_reg[15] was removed.  [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'cordic' (7#1) [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'cordic_counter' (8#1) [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic_counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'threshold' [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/threshold.v:3]
+	Parameter THRESHOLD_VALUE bound to: 10 - type: integer 
+	Parameter NUMBER_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'threshold' (9#1) [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/threshold.v:3]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/hdl/myip_slave2_v1_0_S00_AXI.v:228]
+INFO: [Synth 8-6155] done synthesizing module 'myip_slave2_v1_0_S00_AXI' (10#1) [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/hdl/myip_slave2_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'myip_slave2_v1_0' (11#1) [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/hdl/myip_slave2_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'handgesture_mb_myip_slave2_0_0' (12#1) [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ip/handgesture_mb_myip_slave2_0_0/synth/handgesture_mb_myip_slave2_0_0.v:57]
+WARNING: [Synth 8-3331] design myip_slave2_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design myip_slave2_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design myip_slave2_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design myip_slave2_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design myip_slave2_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design myip_slave2_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 443.840 ; gain = 155.449
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 443.840 ; gain = 155.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 443.840 ; gain = 155.449
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.395 . Memory (MB): peak = 798.398 ; gain = 5.219
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 798.398 ; gain = 510.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 798.398 ; gain = 510.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 798.398 ; gain = 510.008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "ADDRESS" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STATE" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'RxTxSTATE_reg' in module 'spi_interface'
+INFO: [Synth 8-5546] ROM "sclk_previous" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sclk_buffer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "RxTxSTATE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "reset" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:109]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:108]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:109]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:108]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:109]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:108]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:109]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:108]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:109]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:108]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:109]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:108]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:109]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:108]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:109]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:108]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:109]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:108]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:109]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:108]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:109]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:108]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:109]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:108]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:109]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:108]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:109]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:108]
+WARNING: [Synth 8-3936] Found unconnected internal register 'xyz[14].y_reg[15]' and it is trimmed from '17' to '16' bits. [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:99]
+WARNING: [Synth 8-3936] Found unconnected internal register 'xyz[14].x_reg[15]' and it is trimmed from '17' to '16' bits. [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:98]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+           RxTxTYPE_idle |                              000 |                              000
+          RxTxTYPE_rx_tx |                              001 |                              001
+         RxTxTYPE_buffer |                              010 |                              100
+           RxTxTYPE_hold |                              011 |                              010
+            RxTxTYPE_end |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'RxTxSTATE_reg' using encoding 'sequential' in module 'spi_interface'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 798.398 ; gain = 510.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 42    
+	   2 Input     29 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 9     
+	   3 Input     17 Bit       Adders := 84    
+	  16 Input     16 Bit       Adders := 3     
+	   3 Input     16 Bit       Adders := 6     
+	   2 Input     16 Bit       Adders := 3     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 49    
+	               29 Bit    Registers := 1     
+	               17 Bit    Registers := 90    
+	               16 Bit    Registers := 63    
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	  14 Input     48 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input     31 Bit        Muxes := 3     
+	   2 Input     30 Bit        Muxes := 3     
+	   2 Input     29 Bit        Muxes := 4     
+	   2 Input     28 Bit        Muxes := 3     
+	   2 Input     27 Bit        Muxes := 3     
+	   2 Input     26 Bit        Muxes := 3     
+	   2 Input     25 Bit        Muxes := 3     
+	   2 Input     24 Bit        Muxes := 3     
+	   2 Input     23 Bit        Muxes := 3     
+	   2 Input     22 Bit        Muxes := 3     
+	   2 Input     21 Bit        Muxes := 3     
+	   2 Input     20 Bit        Muxes := 3     
+	   2 Input     19 Bit        Muxes := 3     
+	   2 Input     18 Bit        Muxes := 3     
+	   3 Input     17 Bit        Muxes := 6     
+	   2 Input     17 Bit        Muxes := 84    
+	   2 Input     16 Bit        Muxes := 6     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   4 Input      8 Bit        Muxes := 1     
+	  17 Input      8 Bit        Muxes := 1     
+	  14 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 10    
+	  11 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module spi_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  14 Input     48 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   4 Input      8 Bit        Muxes := 1     
+	  17 Input      8 Bit        Muxes := 1     
+	  14 Input      8 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module spi_interface 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 10    
+Module resetter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 1     
++---Registers : 
+	               29 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     29 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module filter 
+Detailed RTL Component Info : 
++---Adders : 
+	  16 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 17    
+Module cordic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 14    
+	   2 Input     17 Bit       Adders := 3     
+	   3 Input     17 Bit       Adders := 28    
+	   3 Input     16 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 15    
+	               17 Bit    Registers := 30    
+	               16 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input     29 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   3 Input     17 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 28    
+	   2 Input     16 Bit        Muxes := 2     
+Module cordic_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      1 Bit        Muxes := 2     
+Module threshold 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module myip_slave2_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "gyro_spi_interface/sclk_previous" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gyro_spi_interface/sclk_buffer" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element cordic1/xyz[14].y_reg[15] was removed.  [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:99]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cordic1/xyz[14].x_reg[15]' and it is trimmed from '16' to '15' bits. [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:98]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cordic1/xyz[13].x_reg[14]' and it is trimmed from '17' to '15' bits. [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:98]
+DSP Report: Generating DSP angle0, operation Mode is: A*(B:0x2710).
+DSP Report: operator angle0 is absorbed into DSP angle0.
+WARNING: [Synth 8-6014] Unused sequential element cordic1/z_reg[0] was removed.  [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:69]
+DSP Report: Generating DSP cordic1/z_reg[0], operation Mode is: (A*(B:0x2710))'.
+DSP Report: register cordic1/z_reg[0] is absorbed into DSP cordic1/z_reg[0].
+DSP Report: operator angle0 is absorbed into DSP cordic1/z_reg[0].
+DSP Report: Generating DSP cordic1/xyz[0].z_reg[1], operation Mode is: (C+(A*(B:0x2710))')'.
+DSP Report: register cordic1/xyz[0].z_reg[1] is absorbed into DSP cordic1/xyz[0].z_reg[1].
+DSP Report: register cordic1/z_reg[0] is absorbed into DSP cordic1/xyz[0].z_reg[1].
+DSP Report: operator p_1_out is absorbed into DSP cordic1/xyz[0].z_reg[1].
+DSP Report: operator angle0 is absorbed into DSP cordic1/xyz[0].z_reg[1].
+INFO: [Synth 8-4471] merging register 'cordic1/z_reg[0][30:0]' into 'cordic1/z_reg[0][30:0]' [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:69]
+WARNING: [Synth 8-6014] Unused sequential element cordic1/z_reg[0] was removed.  [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:69]
+WARNING: [Synth 8-6014] Unused sequential element cordic1/z_reg[0] was removed.  [c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ipshared/a90d/src/cordic.v:69]
+DSP Report: Generating DSP cordic1/z_reg[0], operation Mode is: (A*(B:0x2710))'.
+DSP Report: register cordic1/z_reg[0] is absorbed into DSP cordic1/z_reg[0].
+DSP Report: operator angle0 is absorbed into DSP cordic1/z_reg[0].
+DSP Report: Generating DSP cordic1/xyz[0].z_reg[1], operation Mode is: (C+(A*(B:0x2710))')'.
+DSP Report: register cordic1/xyz[0].z_reg[1] is absorbed into DSP cordic1/xyz[0].z_reg[1].
+DSP Report: register cordic1/z_reg[0] is absorbed into DSP cordic1/xyz[0].z_reg[1].
+DSP Report: operator p_1_out is absorbed into DSP cordic1/xyz[0].z_reg[1].
+DSP Report: operator angle0 is absorbed into DSP cordic1/xyz[0].z_reg[1].
+INFO: [Synth 8-5545] ROM "resetter1/reset" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design myip_slave2_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design myip_slave2_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design myip_slave2_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design myip_slave2_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design myip_slave2_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design myip_slave2_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/x_reg[0][0]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/y_reg[0][0]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/x_reg[0][1]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/y_reg[0][1]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/x_reg[0][2]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/y_reg[0][2]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/x_reg[0][3]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/y_reg[0][3]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/x_reg[0][4]' (FD) to 'cordic_counter:/cordic1/x_reg[0][8]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/y_reg[0][4]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/x_reg[0][5]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/y_reg[0][5]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/x_reg[0][6]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/y_reg[0][6]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/x_reg[0][7]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/y_reg[0][7]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/x_reg[0][8]' (FD) to 'cordic_counter:/cordic1/x_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/y_reg[0][8]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/x_reg[0][9]' (FD) to 'cordic_counter:/cordic1/x_reg[0][10]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/y_reg[0][9]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/x_reg[0][10]' (FD) to 'cordic_counter:/cordic1/x_reg[0][13]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/y_reg[0][10]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/x_reg[0][11]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/y_reg[0][11]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/x_reg[0][12]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/y_reg[0][12]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cordic_counter:/\cordic1/x_reg[0][13] )
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/y_reg[0][13]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/x_reg[0][14]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/y_reg[0][14]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/x_reg[0][15]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/y_reg[0][15]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/x_reg[0][16]' (FD) to 'cordic_counter:/cordic1/y_reg[0][16]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cordic_counter:/\cordic1/y_reg[0][16] )
+INFO: [Synth 8-3886] merging instance 'inst/myip_slave2_v1_0_S00_AXI_inst/udut/gyro_spi_master/DATA_reg[0]' (FDRE) to 'inst/myip_slave2_v1_0_S00_AXI_inst/udut/gyro_spi_master/DATA_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/myip_slave2_v1_0_S00_AXI_inst/udut/gyro_spi_master/DATA_reg[1]' (FDRE) to 'inst/myip_slave2_v1_0_S00_AXI_inst/udut/gyro_spi_master/DATA_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/myip_slave2_v1_0_S00_AXI_inst/udut/gyro_spi_master/ADDRESS_reg[2]' (FDRE) to 'inst/myip_slave2_v1_0_S00_AXI_inst/udut/gyro_spi_master/ADDRESS_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/myip_slave2_v1_0_S00_AXI_inst/udut/gyro_spi_master/DATA_reg[2]' (FDRE) to 'inst/myip_slave2_v1_0_S00_AXI_inst/udut/gyro_spi_master/DATA_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/myip_slave2_v1_0_S00_AXI_inst/udut/gyro_spi_master/ADDRESS_reg[3]' (FDRE) to 'inst/myip_slave2_v1_0_S00_AXI_inst/udut/gyro_spi_master/ADDRESS_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/myip_slave2_v1_0_S00_AXI_inst /udut/\gyro_spi_master/ADDRESS_reg[4] )
+INFO: [Synth 8-3886] merging instance 'inst/myip_slave2_v1_0_S00_AXI_inst/udut/gyro_spi_master/DATA_reg[5]' (FDRE) to 'inst/myip_slave2_v1_0_S00_AXI_inst/udut/gyro_spi_master/DATA_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/myip_slave2_v1_0_S00_AXI_inst/udut/gyro_spi_master/ADDRESS_reg[6]' (FDRE) to 'inst/myip_slave2_v1_0_S00_AXI_inst/udut/gyro_spi_master/ADDRESS_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/myip_slave2_v1_0_S00_AXI_inst /udut/\gyro_spi_master/DATA_reg[7] )
+INFO: [Synth 8-3886] merging instance 'filter:/output_number_reg[11]' (FDRE) to 'filter:/output_number_reg[15]'
+INFO: [Synth 8-3886] merging instance 'filter:/output_number_reg[12]' (FDRE) to 'filter:/output_number_reg[15]'
+INFO: [Synth 8-3886] merging instance 'filter:/output_number_reg[13]' (FDRE) to 'filter:/output_number_reg[15]'
+INFO: [Synth 8-3886] merging instance 'filter:/output_number_reg[14]' (FDRE) to 'filter:/output_number_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/myip_slave2_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/myip_slave2_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/myip_slave2_v1_0_S00_AXI_inst /\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/myip_slave2_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/myip_slave2_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/myip_slave2_v1_0_S00_AXI_inst /\axi_bresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].x_reg[1][1]' (FD) to 'cordic_counter:/cordic1/xyz[0].x_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].y_reg[1][1]' (FD) to 'cordic_counter:/cordic1/xyz[0].y_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].x_reg[1][2]' (FD) to 'cordic_counter:/cordic1/xyz[0].x_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].y_reg[1][2]' (FD) to 'cordic_counter:/cordic1/xyz[0].y_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].x_reg[1][5]' (FD) to 'cordic_counter:/cordic1/xyz[0].x_reg[1][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/y_reg[0][16]' (FD) to 'cordic_counter:/cordic1/xyz[0].x_reg[1][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].y_reg[1][5]' (FD) to 'cordic_counter:/cordic1/xyz[0].y_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].x_reg[1][6]' (FD) to 'cordic_counter:/cordic1/xyz[0].x_reg[1][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].y_reg[1][6]' (FD) to 'cordic_counter:/cordic1/xyz[0].y_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].x_reg[1][7]' (FD) to 'cordic_counter:/cordic1/xyz[0].x_reg[1][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].y_reg[1][7]' (FD) to 'cordic_counter:/cordic1/xyz[0].y_reg[1][11]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].x_reg[1][8]' (FD) to 'cordic_counter:/cordic1/xyz[0].x_reg[1][13]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/x_reg[0][13]' (FD) to 'cordic_counter:/cordic1/xyz[0].x_reg[1][13]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].y_reg[1][8]' (FD) to 'cordic_counter:/cordic1/xyz[0].y_reg[1][9]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].x_reg[1][9]' (FD) to 'cordic_counter:/cordic1/xyz[0].x_reg[1][13]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].y_reg[1][9]' (FD) to 'cordic_counter:/cordic1/xyz[0].y_reg[1][10]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].x_reg[1][10]' (FD) to 'cordic_counter:/cordic1/xyz[0].x_reg[1][13]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].y_reg[1][10]' (FD) to 'cordic_counter:/cordic1/xyz[0].y_reg[1][13]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].x_reg[1][11]' (FD) to 'cordic_counter:/cordic1/xyz[0].x_reg[1][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].y_reg[1][11]' (FD) to 'cordic_counter:/cordic1/xyz[0].y_reg[1][12]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].x_reg[1][12]' (FD) to 'cordic_counter:/cordic1/xyz[0].x_reg[1][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].y_reg[1][12]' (FD) to 'cordic_counter:/cordic1/xyz[0].y_reg[1][14]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cordic_counter:/\cordic1/xyz[0].x_reg[1][13] )
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].x_reg[1][14]' (FD) to 'cordic_counter:/cordic1/xyz[0].x_reg[1][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].y_reg[1][14]' (FD) to 'cordic_counter:/cordic1/xyz[0].y_reg[1][15]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].x_reg[1][15]' (FD) to 'cordic_counter:/cordic1/xyz[0].x_reg[1][16]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].y_reg[1][15]' (FD) to 'cordic_counter:/cordic1/xyz[0].y_reg[1][16]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cordic_counter:/\cordic1/xyz[0].x_reg[1][16] )
+WARNING: [Synth 8-3332] Sequential element (gyro_spi_master/done_init_reg) is unused and will be removed from module gyro_interface.
+WARNING: [Synth 8-3332] Sequential element (gyro_spi_master/done_read_reg) is unused and will be removed from module gyro_interface.
+WARNING: [Synth 8-3332] Sequential element (gyro_spi_master/DATA_reg[7]) is unused and will be removed from module gyro_interface.
+WARNING: [Synth 8-3332] Sequential element (gyro_spi_master/ADDRESS_reg[4]) is unused and will be removed from module gyro_interface.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].y_reg[14][13]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].y_reg[14][12]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].y_reg[14][11]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].y_reg[14][10]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].y_reg[14][9]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].y_reg[14][8]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].y_reg[14][7]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].y_reg[14][6]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].y_reg[14][5]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].y_reg[14][4]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].y_reg[14][3]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].y_reg[14][2]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].y_reg[14][1]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].y_reg[14][0]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][30]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][29]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][28]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][27]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][26]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][25]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][24]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][23]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][22]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][21]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][20]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][19]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][18]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][17]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][16]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][15]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][14]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][13]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][12]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][11]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][10]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][9]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][8]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][7]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][6]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][5]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][4]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][3]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][2]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][1]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[13].z_reg[14][0]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[0].x_reg[1][16]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[0].x_reg[1][13]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (axi_bresp_reg[1]) is unused and will be removed from module myip_slave2_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_araddr_reg[1]) is unused and will be removed from module myip_slave2_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_araddr_reg[0]) is unused and will be removed from module myip_slave2_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[1]) is unused and will be removed from module myip_slave2_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_awaddr_reg[0]) is unused and will be removed from module myip_slave2_v1_0_S00_AXI.
+WARNING: [Synth 8-3332] Sequential element (axi_rresp_reg[1]) is unused and will be removed from module myip_slave2_v1_0_S00_AXI.
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].x_reg[1][0]' (FD) to 'cordic_counter:/cordic1/xyz[0].x_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].y_reg[1][0]' (FD) to 'cordic_counter:/cordic1/xyz[0].x_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].x_reg[1][3]' (FD) to 'cordic_counter:/cordic1/xyz[0].y_reg[1][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cordic_counter:/\cordic1/xyz[0].y_reg[1][3] )
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].x_reg[1][4]' (FD) to 'cordic_counter:/cordic1/xyz[0].y_reg[1][4]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cordic_counter:/\cordic1/xyz[0].y_reg[1][4] )
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[1].y_reg[2][0]' (FD) to 'cordic_counter:/cordic1/xyz[1].x_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].y_reg[1][3]' (FD) to 'cordic_counter:/cordic1/xyz[1].x_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[1].y_reg[2][1]' (FD) to 'cordic_counter:/cordic1/xyz[1].x_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[1].x_reg[2][0]' (FD) to 'cordic_counter:/cordic1/xyz[1].x_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[1].y_reg[2][2]' (FD) to 'cordic_counter:/cordic1/xyz[1].x_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[1].x_reg[2][1]' (FD) to 'cordic_counter:/cordic1/xyz[1].x_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[1].y_reg[2][3]' (FD) to 'cordic_counter:/cordic1/xyz[1].x_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[0].y_reg[1][4]' (FD) to 'cordic_counter:/cordic1/xyz[1].x_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[1].x_reg[2][2]' (FD) to 'cordic_counter:/cordic1/xyz[1].x_reg[2][6]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cordic_counter:/\cordic1/xyz[1].x_reg[2][3] )
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[1].x_reg[2][5]' (FD) to 'cordic_counter:/cordic1/xyz[1].x_reg[2][6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cordic_counter:/\cordic1/xyz[1].x_reg[2][6] )
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[2].x_reg[3][0]' (FD) to 'cordic_counter:/cordic1/xyz[2].y_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[1].x_reg[2][6]' (FD) to 'cordic_counter:/cordic1/xyz[2].y_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[2].x_reg[3][1]' (FD) to 'cordic_counter:/cordic1/xyz[2].y_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'cordic_counter:/cordic1/xyz[1].x_reg[2][3]' (FD) to 'cordic_counter:/cordic1/xyz[2].y_reg[3][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cordic_counter:/\cordic1/xyz[2].y_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cordic_counter:/\cordic1/xyz[2].y_reg[3][1] )
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[2].y_reg[3][0]) is unused and will be removed from module cordic_counter.
+WARNING: [Synth 8-3332] Sequential element (cordic1/xyz[2].y_reg[3][1]) is unused and will be removed from module cordic_counter.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 798.398 ; gain = 510.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++---------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping          | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|cordic_counter | A*(B:0x2710)         | 16     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cordic_counter | (A*(B:0x2710))'      | 16     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|cordic_counter | (C+(A*(B:0x2710))')' | 16     | 15     | 31     | -      | 32     | 0    | 0    | 0    | -    | -     | 1    | 1    | 
+|cordic_counter | (A*(B:0x2710))'      | 16     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|cordic_counter | (C+(A*(B:0x2710))')' | 16     | 15     | 31     | -      | 32     | 0    | 0    | 0    | -    | -     | 1    | 1    | 
++---------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:58 . Memory (MB): peak = 844.516 ; gain = 556.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:59 . Memory (MB): peak = 852.855 ; gain = 564.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:01:01 . Memory (MB): peak = 888.762 ; gain = 600.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 888.762 ; gain = 600.371
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 888.762 ; gain = 600.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 888.762 ; gain = 600.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 888.762 ; gain = 600.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 888.762 ; gain = 600.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 888.762 ; gain = 600.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |   883|
+|2     |DSP48E1_2 |     3|
+|3     |DSP48E1_3 |     3|
+|4     |LUT1      |   401|
+|5     |LUT2      |  1403|
+|6     |LUT3      |  1544|
+|7     |LUT4      |   421|
+|8     |LUT5      |   108|
+|9     |LUT6      |   162|
+|10    |FDRE      |  3946|
+|11    |FDSE      |     6|
++------+----------+------+
+
+Report Instance Areas: 
++------+----------------------------------+-------------------------+------+
+|      |Instance                          |Module                   |Cells |
++------+----------------------------------+-------------------------+------+
+|1     |top                               |                         |  8880|
+|2     |  inst                            |myip_slave2_v1_0         |  8880|
+|3     |    myip_slave2_v1_0_S00_AXI_inst |myip_slave2_v1_0_S00_AXI |  8876|
+|4     |      cordic_counter_x            |cordic_counter           |  2155|
+|5     |        cordic1                   |cordic_7                 |  1998|
+|6     |      cordic_counter_y            |cordic_counter_0         |  2156|
+|7     |        cordic1                   |cordic_6                 |  1998|
+|8     |      cordic_counter_z            |cordic_counter_1         |  2155|
+|9     |        cordic1                   |cordic                   |  1998|
+|10    |      filter_x                    |filter                   |   577|
+|11    |      filter_y                    |filter_2                 |   577|
+|12    |      filter_z                    |filter_3                 |   577|
+|13    |      integrator_x                |integrator               |    50|
+|14    |      integrator_y                |integrator_4             |    50|
+|15    |      integrator_z                |integrator_5             |    50|
+|16    |      resetter1                   |resetter                 |    76|
+|17    |      threshold_xyz               |threshold                |     7|
+|18    |      udut                        |gyro_interface           |   255|
+|19    |        gyro_spi_interface        |spi_interface            |    94|
+|20    |        gyro_spi_master           |spi_master               |   161|
++------+----------------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 888.762 ; gain = 600.371
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 73 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:50 . Memory (MB): peak = 888.762 ; gain = 245.813
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 888.762 ; gain = 600.371
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 889 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+197 Infos, 81 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:08 . Memory (MB): peak = 888.762 ; gain = 611.840
+INFO: [Common 17-1381] The checkpoint 'C:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.runs/handgesture_mb_myip_slave2_0_0_synth_1/handgesture_mb_myip_slave2_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.srcs/sources_1/bd/handgesture_mb/ip/handgesture_mb_myip_slave2_0_0/handgesture_mb_myip_slave2_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 19 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/PC/Desktop/FinalProjectECE532/handgesture/handgesture.runs/handgesture_mb_myip_slave2_0_0_synth_1/handgesture_mb_myip_slave2_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file handgesture_mb_myip_slave2_0_0_utilization_synth.rpt -pb handgesture_mb_myip_slave2_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.172 . Memory (MB): peak = 888.762 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 27 17:25:49 2019...
